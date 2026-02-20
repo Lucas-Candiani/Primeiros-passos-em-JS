@@ -1,0 +1,14 @@
+var entrada = 0
+var fim = 12
+var pula = 4
+
+if (entrada > fim || entrada == fim) {
+    console.log("[Erro de sintaxe] tente novamente")
+} else {
+    while (entrada < fim) {
+    console.log(`Contagem ${entrada}`)
+    entrada += pula
+}
+}
+
+
