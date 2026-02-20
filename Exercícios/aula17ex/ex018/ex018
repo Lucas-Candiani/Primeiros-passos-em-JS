@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenador Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Valores</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Número (entre 1 e 100) <input id="valor" type="number"> <input type="button" value="Enviar" onclick="enviar()"></p>
+            <select name="area" id="area" size="10px">
+                <option value="1">Vamos nessa</option>
+            </select>
+            <p><input type="button" value="Finalizar" onclick="finalizar()"></p>
+        </div>
+
+        <div id="res">
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;CursoemVídeo <br>
+        Exercício 18</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
