@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfandega</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <input id="where" type="text">
+    <input type="button" value="Resultado" onclick="clicar()">
+    <div id="area">Resultado</div>
+    
+    <script>
+        function clicar(){
+            var nacionalidade = document.getElementById("where").value
+            var area = document.getElementById("area")
+            if (nacionalidade=="Brasil"){
+                area.innerHTML = `Brasileirão`
+            } else {
+                area.innerHTML = `Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
