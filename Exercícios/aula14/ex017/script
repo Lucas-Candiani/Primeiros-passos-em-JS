@@ -1,0 +1,35 @@
+function calcular(){
+    var num = document.getElementById("num")
+    var res = document.getElementById("txttab")
+    
+    if (num.value.length == 0){
+        window.alert('Nenhum valor informado')
+    } else {
+        var number = Number(num.value)
+        res.innerHTML = `Funcionando...`
+        var c = 1
+        res.innerHTML = ''
+        while (c <= 10){
+            var item = document.createElement('option')
+            item.text = ` ${number} x ${c} = ${number*c} `
+            res.appendChild(item)
+            c++
+        }
+    } 
+    
+    //Método que eu fiz sozinho:
+    /*
+
+    //Vou colocar uma variável para iniciar, e ir até 10
+    var begin = 1 
+    
+    if(num.value.length == 0){
+        window.alert("[ERRO] Nenhum valor informado")
+    } else {
+        while (begin <11){
+            var resultado = number*begin
+            res.innerHTML += `<option> ${number} x ${begin} = ${resultado}</option>`
+            begin ++
+        }
+    }*/
+}
